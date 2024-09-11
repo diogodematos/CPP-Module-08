@@ -6,7 +6,7 @@
 /*   By: dcarrilh <dcarrilh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/06 17:02:52 by dcarrilh          #+#    #+#             */
-/*   Updated: 2024/09/06 18:52:31 by dcarrilh         ###   ########.fr       */
+/*   Updated: 2024/09/11 14:12:41 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int main()
 {
+    srand(static_cast<unsigned int>(time(0)));
     std::vector<int> tab;
     //fill(tab.begin(), tab.end(), 4);
     for (int i=0; i < 8; i++)
