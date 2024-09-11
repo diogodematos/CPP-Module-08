@@ -1,6 +1,6 @@
 NAME = ex01
 
-SRC = main.cpp\
+SRC = Span.cpp main.cpp\
 	
 CXX = c++ -g 
 RM = rm -rf
