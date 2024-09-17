@@ -6,7 +6,7 @@
 /*   By: dcarrilh <dcarrilh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/06 16:52:25 by dcarrilh          #+#    #+#             */
-/*   Updated: 2024/09/11 14:16:19 by dcarrilh         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:07:00 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ template <typename T> void easyfind(T tab, int i)
 {
     std::vector<int>::iterator it;
     it = std::find(tab.begin(), tab.end(), i);
-    //std::cout << "distancia: " << distance(tab.begin(), it) << std::endl;
     if (it != tab.end()) 
     {
     std::cout << "Element " << i << " found at position : ";

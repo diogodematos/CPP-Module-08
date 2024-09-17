@@ -6,7 +6,7 @@
 /*   By: dcarrilh <dcarrilh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 12:21:23 by dcarrilh          #+#    #+#             */
-/*   Updated: 2024/09/11 15:34:02 by dcarrilh         ###   ########.fr       */
+/*   Updated: 2024/09/17 19:22:59 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ class Span
         unsigned int getSize();
         unsigned int getN();
         std::vector<int> getSpan();
+        void addNNumber(unsigned int n);
         
 };
 

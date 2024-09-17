@@ -6,7 +6,7 @@
 /*   By: dcarrilh <dcarrilh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 12:39:06 by dcarrilh          #+#    #+#             */
-/*   Updated: 2024/09/11 15:34:25 by dcarrilh         ###   ########.fr       */
+/*   Updated: 2024/09/17 19:24:59 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,28 @@ void Span::addNumber(int n)
     }
 }
 
+void Span::addNNumber(unsigned int n)
+{
+    srand(static_cast<unsigned int>(time(0)));
+    for(unsigned int i = 0; i != n; i++)
+    {
+        try
+        {
+            if (_Size != _N)
+            {
+                _Span.push_back(rand() % 20000);
+                _Size++;
+            }
+            else
+                throw std::out_of_range("Span Full!");
+        }
+        catch (std::out_of_range &e)
+        {
+            std::cerr << e.what() << std::endl;
+        }
+    }
+}
+
 int Span::shortestSpan()
 {
     try
@@ -69,7 +91,6 @@ int Span::shortestSpan()
                 for (unsigned int k = i + 1; k < _Size; k++)
                 {
                     int d = (_Span[i] - _Span[k]);
-                    //std::cout << "d: " << d << std::endl;
                     if (d < 0)
                         d *= -1;
                     if (d < _min)
